@@ -12,13 +12,13 @@ const projects = [
     tech: ["React", "Firebase", "Node.js", "Express", "Firestore"],
   },
   {
-    title: "SnapSheets Internal Software",
+    title: "SnapSheets",
     description:
       "A Chrome extension developed to improve internal workflows and simplify repetitive tasks for the Provincial Smart Home Services team.",
     tech: ["JavaScript", "HTML", "CSS", "Chrome API"],
   },
   {
-    title: "FontFusion Chrome Extension",
+    title: "FontFusion",
     description:
       "A browser extension developed as part of a digital-literacy research project focused on improving the readability and accessibility of online content.",
     tech: ["JavaScript", "HTML", "CSS", "Chrome API"],
@@ -32,7 +32,7 @@ function Projects() {
       {/* Standard centered container */}
       <div className="max-w-7xl mx-auto px-6 md:px-10 lg:px-16">
 
-        <h2 className="text-7xl font-bold text-center mb-16">
+        <h2 className="text-8xl font-bold text-center mb-16">
           SELECTED PROJECTS
         </h2>
 
@@ -60,7 +60,7 @@ function Projects() {
               {/* Project information */}
               <div className={index % 2 === 1 ? "order-1" : ""}>
 
-                <h3 className="text-3xl font-bold mb-4">
+                <h3 className="text-5xl font-bold mb-4">
                   {project.title}
                 </h3>
 
@@ -69,12 +69,12 @@ function Projects() {
                 </p>
 
                 {/* Tech stack */}
-                <div className="flex gap-4 flex-wrap mb-8">
+                <div className="flex gap-4 flex-wrap mb-5">
 
                   {project.tech.map((technology) => (
                     <div
                       key={technology}
-                      className="w-16 h-16 border rounded-full flex items-center justify-center text-xs text-center"
+                      className="w-20 h-20 border rounded-full flex items-center justify-center text-xs text-center"
                     >
                       {technology}
                     </div>
