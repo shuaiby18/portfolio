@@ -2,7 +2,7 @@ function Home() {
   return (
     <section
       id="home"
-      className="min-h-screen px-15 py-0"
+      className="min-h-screen px-16 py-0"
     >
       <div className="grid grid-cols-2 items-center gap-16">
 
