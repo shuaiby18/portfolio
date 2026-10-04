@@ -39,7 +39,7 @@ function Process() {
           {processSteps.map((step) => (
             <div
               key={step.title}
-              className="border rounded-xl min-h-[420px] flex overflow-hidden"
+              className="border rounded-xl min-h-[400px] flex overflow-hidden"
             >
 
               {/* Collapsed vertical label */}
