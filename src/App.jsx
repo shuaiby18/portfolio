@@ -4,6 +4,8 @@ import About from './components/About'
 import Projects from './components/Projects'
 import Experience from './components/Experience'
 import ResearchProjects from './components/ResearchProjects'
+import Services from './components/Services'
+import Process from './components/Process.jsx'
 
 
 function App() {
@@ -15,6 +17,8 @@ function App() {
       <Projects />
       <Experience />
       <ResearchProjects />
+      <Services />
+      <Process />
     </main>
   )
 }
