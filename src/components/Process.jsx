@@ -2,26 +2,32 @@ const processSteps = [
   {
     title: "DISCOVER",
     points: ["Requirements", "User Needs", "Project Goals"],
+    accent: "bg-black",
   },
   {
     title: "PLAN",
     points: ["Project Scope", "Feature Planning", "Technical Approach"],
+    accent: "bg-black",
   },
   {
     title: "DESIGN",
     points: ["UI Structure", "User Experience", "Visual Direction"],
+    accent: "bg-black",
   },
   {
     title: "BUILD",
     points: ["Frontend Development", "Backend Development", "Database & Integration"],
+    accent: "bg-black",
   },
   {
     title: "TEST",
     points: ["Functionality Testing", "Responsive Testing", "Performance & Usability"],
+    accent: "bg-black",
   },
   {
     title: "LAUNCH",
     points: ["Final Refinements", "Deployment", "Handoff & Support"],
+    accent: "bg-black",
   },
 ]
 
@@ -39,8 +45,13 @@ function Process() {
           {processSteps.map((step) => (
             <div
               key={step.title}
-              className="border rounded-xl min-h-[400px] flex overflow-hidden"
+              className="relative border rounded-xl min-h-[400px] flex overflow-hidden"
             >
+
+              {/* Accent strip */}
+              <div
+                className={`absolute left-0 top-0 bottom-0 w-3 ${step.accent}`}
+              ></div>
 
               {/* Collapsed vertical label */}
               <div className="w-full flex items-center justify-center">
