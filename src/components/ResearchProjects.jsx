@@ -11,7 +11,7 @@ function ResearchProjects() {
 
           {/* Font-Fusion */}
           <div className="flex justify-start">
-            <div className="w-[62%] min-h-[360px] border rounded-xl p-8 flex flex-col">
+            <div className="w-[60%] min-h-[360px] border rounded-xl p-8 flex flex-col">
 
               <h3 className="text-[26px] font-bold mb-6">
                 Font-Fusion Chrome Extension for Digital Literacy
@@ -54,7 +54,7 @@ function ResearchProjects() {
 
           {/* Mobile Gaming Research */}
           <div className="flex justify-end">
-            <div className="w-[62%] min-h-[360px] border rounded-xl p-8 flex flex-col">
+            <div className="w-[60%] min-h-[360px] border rounded-xl p-8 flex flex-col">
 
               <h3 className="text-[26px] font-bold mb-6">
                 Analysis of Mobile Gaming Controller Schemes
