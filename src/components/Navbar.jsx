@@ -24,7 +24,7 @@ function Navbar() {
   }, [menuOpen])
 
   return (
-    <nav className="relative px-6 pt-4 pb-0 lg:pt-12 lg:pb-14">
+    <nav className="relative px-6 pt-4 pb-0 md:pt-12 md:pb-14">
 
       {/* DESKTOP / TABLET NAV */}
       <div className="hidden md:flex justify-center">
@@ -61,52 +61,31 @@ function Navbar() {
         {menuOpen && (
           <div className="absolute top-full right-6 mt-2 flex flex-col items-center gap-2 bg-white border rounded-xl px-6 py-4 text-base font-semibold z-50">
 
-            <a
-              href="#home"
-              onClick={() => setMenuOpen(false)}
-            >
+            <a href="#home" onClick={() => setMenuOpen(false)}>
               Home
             </a>
 
-            <a
-              href="#about"
-              onClick={() => setMenuOpen(false)}
-            >
+            <a href="#about" onClick={() => setMenuOpen(false)}>
               About
             </a>
 
-            <a
-              href="#projects"
-              onClick={() => setMenuOpen(false)}
-            >
+            <a href="#projects" onClick={() => setMenuOpen(false)}>
               Projects
             </a>
 
-            <a
-              href="#experience"
-              onClick={() => setMenuOpen(false)}
-            >
+            <a href="#experience" onClick={() => setMenuOpen(false)}>
               Experience
             </a>
 
-            <a
-              href="#services"
-              onClick={() => setMenuOpen(false)}
-            >
+            <a href="#services" onClick={() => setMenuOpen(false)}>
               Services
             </a>
 
-            <a
-              href="#process"
-              onClick={() => setMenuOpen(false)}
-            >
+            <a href="#process" onClick={() => setMenuOpen(false)}>
               Process
             </a>
 
-            <a
-              href="#contact"
-              onClick={() => setMenuOpen(false)}
-            >
+            <a href="#contact" onClick={() => setMenuOpen(false)}>
               Contact
             </a>
 
