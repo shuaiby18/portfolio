@@ -21,12 +21,12 @@ function About() {
           <div className="contents lg:block">
 
             {/* Heading */}
-            <h2 className="order-1 col-span-12 lg:order-none lg:col-span-1 text-5xl lg:text-8xl font-bold text-center lg:text-left mb-0 lg:mb-8">
+            <h2 className="order-1 col-span-12 lg:order-none lg:col-span-1 text-5xl lg:text-8xl font-bold text-center lg:text-left mb-0 lg:mb-0">
               ABOUT ME
             </h2>
 
             {/* Description */}
-            <div className="order-3 col-span-6 min-w-0 lg:order-none lg:col-span-1 min-h-0 lg:min-h-[175px] flex items-start lg:items-center mb-0 lg:mb-10">
+            <div className="order-3 col-span-6 min-w-0 lg:order-none lg:col-span-1 min-h-0 lg:min-h-[175px] flex items-start lg:items-center mb-0 lg:mb-0">
               <p className="text-sm sm:text-base lg:text-lg">
                 I'm a Full-Stack Developer with a Computer Science background
                 and hands-on experience building software for real business
@@ -37,15 +37,14 @@ function About() {
             </div>
 
             {/* Tech stack */}
-            <div className="order-4 col-span-10 min-w-0 lg:order-none lg:col-span-1 grid grid-cols-8 gap-y-4 lg:grid-cols-5 lg:gap-8">
-
-              {/* Mobile: Row 1 / Desktop: Original layout */}
+<div className="order-4 col-span-10 min-w-0 lg:order-none lg:col-span-1 grid grid-cols-8 gap-y-4 lg:grid-cols-5 lg:gap-x-8 lg:gap-y-4">
+              {/* Mobile: Row 1 / Desktop: Row 1 */}
 
               <div className="col-span-2 col-start-2 row-start-1 lg:col-span-1 lg:col-start-auto lg:row-start-auto border rounded-full aspect-square w-[90%] lg:w-full justify-self-center flex items-center justify-center text-xs sm:text-base">
                 Tech 1
               </div>
 
-              <div className="col-span-2 col-start-4 row-start-1 lg:col-span-1 lg:col-start-auto lg:row-start-auto border rounded-full aspect-square w-[90%] lg:w-full justify-self-center flex items-center justify-center lg:mt-12 text-xs sm:text-base">
+              <div className="col-span-2 col-start-4 row-start-1 lg:col-span-1 lg:col-start-auto lg:row-start-auto border rounded-full aspect-square w-[90%] lg:w-full justify-self-center flex items-center justify-center text-xs sm:text-base">
                 Tech 2
               </div>
 
@@ -53,9 +52,9 @@ function About() {
                 Tech 3
               </div>
 
-              {/* Mobile: Row 2 / Desktop: Original layout */}
+              {/* Mobile: Row 2 / Desktop: Row 1 */}
 
-              <div className="col-span-2 col-start-1 row-start-2 lg:col-span-1 lg:col-start-auto lg:row-start-auto border rounded-full aspect-square w-[90%] lg:w-full justify-self-center flex items-center justify-center lg:mt-12 text-xs sm:text-base">
+              <div className="col-span-2 col-start-1 row-start-2 lg:col-span-1 lg:col-start-auto lg:row-start-auto border rounded-full aspect-square w-[90%] lg:w-full justify-self-center flex items-center justify-center text-xs sm:text-base">
                 Tech 4
               </div>
 
@@ -63,27 +62,27 @@ function About() {
                 Tech 5
               </div>
 
-              {/* Additional mobile circles */}
+              {/* Mobile: Row 2 / Desktop: Row 2 */}
 
-              <div className="col-span-2 col-start-5 row-start-2 lg:hidden border rounded-full aspect-square w-[90%] justify-self-center flex items-center justify-center text-xs sm:text-base">
+              <div className="col-span-2 col-start-5 row-start-2 lg:col-span-1 lg:col-start-auto lg:row-start-auto border rounded-full aspect-square w-[90%] lg:w-full justify-self-center flex items-center justify-center text-xs sm:text-base lg:translate-x-4">
                 Tech 6
               </div>
 
-              <div className="col-span-2 col-start-7 row-start-2 lg:hidden border rounded-full aspect-square w-[90%] justify-self-center flex items-center justify-center text-xs sm:text-base">
+              <div className="col-span-2 col-start-7 row-start-2 lg:col-span-1 lg:col-start-auto lg:row-start-auto border rounded-full aspect-square w-[90%] lg:w-full justify-self-center flex items-center justify-center text-xs sm:text-base lg:translate-x-4">
                 Tech 7
               </div>
 
-              {/* Mobile: Row 3 */}
+              {/* Mobile: Row 3 / Desktop: Row 2 */}
 
-              <div className="col-span-2 col-start-2 row-start-3 lg:hidden border rounded-full aspect-square w-[90%] justify-self-center flex items-center justify-center text-xs sm:text-base">
+              <div className="col-span-2 col-start-2 row-start-3 lg:col-span-1 lg:col-start-auto lg:row-start-auto border rounded-full aspect-square w-[90%] lg:w-full justify-self-center flex items-center justify-center text-xs sm:text-base lg:translate-x-4">
                 Tech 8
               </div>
 
-              <div className="col-span-2 col-start-4 row-start-3 lg:hidden border rounded-full aspect-square w-[90%] justify-self-center flex items-center justify-center text-xs sm:text-base">
+              <div className="col-span-2 col-start-4 row-start-3 lg:col-span-1 lg:col-start-auto lg:row-start-auto border rounded-full aspect-square w-[90%] lg:w-full justify-self-center flex items-center justify-center text-xs sm:text-base lg:translate-x-4">
                 Tech 9
               </div>
 
-              <div className="col-span-2 col-start-6 row-start-3 lg:hidden border rounded-full aspect-square w-[90%] justify-self-center flex items-center justify-center text-xs sm:text-base">
+              <div className="col-span-2 col-start-6 row-start-3 lg:col-span-1 lg:col-start-auto lg:row-start-auto border rounded-full aspect-square w-[90%] lg:w-full justify-self-center flex items-center justify-center text-xs sm:text-base lg:translate-x-4">
                 Tech 10
               </div>
 
