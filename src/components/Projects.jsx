@@ -33,32 +33,31 @@ function Projects() {
       {/* Standard centered container */}
       <div className="max-w-7xl mx-auto px-6 md:px-10 lg:px-16">
 
-
         {/* Section heading */}
-        <h2 className="text-5xl lg:text-8xl font-bold text-center mb-10 lg:mb-16">
-          <span className="inline-block text-left lg:text-center">
-            <span className="block lg:inline">
+        <h2 className="text-5xl min-[700px]:text-6xl md:text-6xl min-[900px]:text-7xl lg:text-8xl font-bold text-center mb-10 lg:mb-16">
+          <span className="inline-block text-left min-[600px]:text-center min-[600px]:whitespace-nowrap lg:whitespace-normal">
+            <span className="block min-[600px]:inline">
               SELECTED
             </span>
-            <span className="block pl-8 sm:pl-8 lg:inline lg:pl-0 lg:ml-4">
+            <span className="block pl-8 min-[600px]:inline min-[600px]:pl-0 min-[600px]:ml-3 lg:ml-4">
               PROJECTS
             </span>
           </span>
         </h2>
 
         {/* Project list */}
-        <div className="flex flex-col gap-8 lg:gap-24">
+        <div className="flex flex-col gap-8 md:gap-16 lg:gap-24">
 
           {projects.map((project, index) => (
             <div
               key={project.title}
-              className="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-16 items-stretch lg:items-center border lg:border-0 rounded-xl lg:rounded-none p-4 sm:p-6 lg:p-0 min-h-[420px] lg:min-h-0"
+              className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 lg:gap-16 items-stretch md:items-center border md:border-0 rounded-xl md:rounded-none p-4 sm:p-6 md:p-0 min-h-[420px] md:min-h-0"
             >
 
               {/* Project visual */}
               <div
-                className={`order-2 ${index % 2 === 1 ? "lg:order-2" : "lg:order-1"
-                  } rounded-xl lg:border min-h-[210px] lg:min-h-0 lg:h-[300px] flex flex-col items-center justify-center`}
+                className={`order-2 ${index % 2 === 1 ? "md:order-2" : "md:order-1"
+                  } rounded-xl md:border min-h-[210px] md:min-h-0 md:h-[250px] lg:h-[300px] flex flex-col items-center justify-center`}
               >
 
                 {/* Media placeholder */}
@@ -73,7 +72,7 @@ function Projects() {
                 {/* Mobile carousel indicators */}
                 <div
                   aria-hidden="true"
-                  className="flex items-center justify-center gap-1 mb-3 lg:hidden"
+                  className="flex items-center justify-center gap-1 mb-3 md:hidden"
                 >
                   <span className="w-7 h-2 bg-black rounded-full"></span>
                   <span className="w-2 h-2 bg-black rounded-full"></span>
@@ -85,53 +84,47 @@ function Projects() {
 
               {/* Project information */}
               <div
-                className={`contents lg:block ${index % 2 === 1 ? "lg:order-1" : "lg:order-2"
+                className={`contents md:block ${index % 2 === 1 ? "md:order-1" : "md:order-2"
                   }`}
               >
 
                 {/* Title and description */}
-                <div className="order-1 lg:order-none">
+                <div className="order-1 md:order-none">
 
-                  <h3 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-2 lg:mb-4">
+                  <h3 className="text-3xl sm:text-4xl md:text-3xl min-[900px]:text-4xl lg:text-5xl font-bold mb-2 md:mb-3 lg:mb-4">
                     {project.title}
                   </h3>
 
-                  <p className="text-xs sm:text-sm lg:text-lg italic lg:not-italic mb-0 lg:mb-8">
+                  <p className="text-xs sm:text-sm md:text-sm min-[900px]:text-base lg:text-lg italic md:not-italic mb-0 md:mb-6 lg:mb-8">
                     {project.description}
                   </p>
 
                 </div>
 
                 {/* Tech stack and View More */}
-                <div className="order-3 lg:order-none flex items-center justify-between gap-2 lg:block">
+                <div className="order-3 md:order-none flex items-end justify-between gap-2 md:block">
 
                   {/* Tech stack */}
-                  <div className="flex flex-1 min-w-0 gap-1 lg:gap-4 lg:flex-wrap lg:mb-5">
-
-                    {Array.from({ length: 5 }, (_, techIndex) => {
-                      const technology = project.tech[techIndex]
-
-                      return (
-                        <div
-                          key={techIndex}
-                          title={technology || undefined}
-                          aria-label={technology || undefined}
-                          className={`min-w-0 flex-1 aspect-square lg:flex-none lg:w-20 lg:h-20 border rounded-full flex items-center justify-center text-xs text-center ${!technology ? "lg:hidden" : ""
-                            }`}
-                        >
-                          <span className="hidden lg:inline">
-                            {technology}
-                          </span>
-                        </div>
-                      )
-                    })}
+                  <div className="grid grid-cols-5 flex-1 min-w-0 gap-1 md:flex md:flex-nowrap md:gap-1 md:mb-5 lg:gap-2 xl:gap-4">
+                    {project.tech.map((technology) => (
+                      <div
+                        key={technology}
+                        title={technology}
+                        aria-label={technology}
+                        className="min-w-0 flex-1 aspect-square sm:max-w-[80px] md:max-w-16 lg:max-w-[72px] xl:max-w-20 border rounded-full flex items-center justify-center text-xs text-center"
+                      >
+                        <span className="block w-full px-0.5 text-[9px] leading-tight break-normal md:text-xs">
+                          {technology}
+                        </span>
+                      </div>
+                    ))}
 
                   </div>
 
                   {/* View More button */}
                   <button
                     type="button"
-                    className="shrink-0 border px-3 lg:px-5 py-2 rounded text-xs sm:text-sm lg:text-base italic lg:not-italic"
+                    className="shrink-0 border px-3 lg:px-5 py-2 rounded text-xs sm:text-xs md:text-sm lg:text-base italic md:not-italic"
                   >
                     View More
                   </button>
