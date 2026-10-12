@@ -56,8 +56,9 @@ function Projects() {
 
               {/* Project visual */}
               <div
-                className={`order-2 ${index % 2 === 1 ? "md:order-2" : "md:order-1"
-                  } rounded-xl md:border min-h-[210px] md:min-h-0 md:h-[250px] lg:h-[300px] flex flex-col items-center justify-center`}
+                className={`order-2 ${
+                  index % 2 === 1 ? "md:order-2" : "md:order-1"
+                } rounded-xl md:border min-h-[210px] md:min-h-0 md:h-[250px] lg:h-[300px] flex flex-col items-center justify-center`}
               >
 
                 {/* Media placeholder */}
@@ -69,10 +70,10 @@ function Projects() {
                   </div>
                 </div>
 
-                {/* Mobile carousel indicators */}
+                {/* Carousel indicators */}
                 <div
                   aria-hidden="true"
-                  className="flex items-center justify-center gap-1 mb-3 md:hidden"
+                  className="flex items-center justify-center gap-1 mb-3 md:mb-10"
                 >
                   <span className="w-7 h-2 bg-black rounded-full"></span>
                   <span className="w-2 h-2 bg-black rounded-full"></span>
@@ -84,8 +85,9 @@ function Projects() {
 
               {/* Project information */}
               <div
-                className={`contents md:block ${index % 2 === 1 ? "md:order-1" : "md:order-2"
-                  }`}
+                className={`contents md:block ${
+                  index % 2 === 1 ? "md:order-1" : "md:order-2"
+                }`}
               >
 
                 {/* Title and description */}
