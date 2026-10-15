@@ -7,35 +7,42 @@ function Experience() {
       <div className="max-w-7xl mx-auto px-6 md:px-10 lg:px-16">
 
         {/* Section heading */}
-        <h2 className="text-5xl lg:text-8xl font-bold text-center mb-3 lg:mb-16">
-          EXPERIENCE
+        <h2 className="text-5xl lg:text-8xl font-bold text-center mb-3 lg:mb-3">          EXPERIENCE
         </h2>
 
         {/* Mobile subtitle */}
-        <p className="text-center text-[15px] mb-10 lg:hidden">
+        <p className="text-center text-[15px] mb-10 lg:mb-8 lg:text-[24px]">
           A journey through software & operations
         </p>
 
         {/* Desktop column headings */}
-        <div className="hidden lg:grid grid-cols-[1fr_0.45fr_1fr] gap-10 mb-8">
+        <div className="hidden lg:grid grid-cols-[1fr_0.45fr_1fr] gap-10 lg:-mb-2">
 
-          <h3 className="text-4xl font-bold text-center">
+
+          <h3 className="text-4xl font-bold flex items-center justify-center gap-3">
+            <span className="font-mono font-bold">
+              {"</>"}
+            </span>
             Software Experience
           </h3>
 
           <div></div>
 
-          <h3 className="text-4xl font-bold text-center">
+          <h3 className="text-4xl font-bold flex items-center justify-center gap-3">
+            <span aria-hidden="true">▣</span>
             Operations Experience
           </h3>
+
 
         </div>
 
         {/* Experience rows */}
         <div className="relative flex flex-col gap-10 lg:gap-12">
 
+
           {/* Main timeline line */}
-          <div className="absolute left-[10px] lg:left-1/2 -translate-x-1/2 top-2 bottom-0 w-[5px] bg-black"></div>
+          <div className="absolute left-[10px] lg:left-1/2 -translate-x-1/2 top-2 lg:top-13 bottom-2 w-[5px] bg-black"></div>
+
 
           {/* ================= CARE2GIVE ROW ================= */}
           <div className="relative grid grid-cols-[20px_minmax(0,1fr)] lg:grid-cols-[1fr_0.45fr_1fr] gap-x-4 gap-y-4 lg:gap-10 items-start lg:items-stretch">
@@ -241,8 +248,9 @@ function Experience() {
 
             </div>
 
+
             {/* Operations Card */}
-            <div className="order-3 col-start-2 lg:col-start-3 border rounded-xl p-4 sm:p-6 min-h-[230px] h-full">
+            <div className="order-3 col-start-2 lg:col-start-3 border rounded-xl p-4 sm:p-6 min-h-[230px] h-full lg:flex lg:flex-col">
 
               {/* Mobile card category */}
               <div className="flex items-center gap-2 mb-4 lg:hidden">
@@ -252,7 +260,7 @@ function Experience() {
                 </p>
               </div>
 
-              <h4 className="text-xl font-bold mb-4">
+              <h4 className="text-xl font-bold mb-8">
                 Operations Facility Service Coordinator
               </h4>
 
@@ -276,7 +284,32 @@ function Experience() {
 
               </ul>
 
+
+
+              {/* Operations achievements - Desktop only */}
+              <div className="hidden lg:grid grid-cols-[max-content_1fr_1fr] gap-0 mt-auto pt-6">
+
+                <div className="text-center border-r border-black px-2">
+                  <p className="text-2xl font-bold">120+</p>
+                  <p className="text-xs whitespace-nowrap">Concurrent Work Orders</p>
+                </div>
+
+                <div className="text-center border-r border-black px-2">
+                  <p className="text-2xl font-bold">50+</p>
+                  <p className="text-xs whitespace-nowrap">Trades</p>
+                </div>
+
+                <div className="text-center px-2">
+                  <p className="text-2xl font-bold">300+</p>
+                  <p className="text-xs whitespace-nowrap">PM Locations</p>
+                </div>
+
+              </div>
+
+
+
             </div>
+
 
           </div>
 
@@ -373,41 +406,63 @@ function Experience() {
 
             </div>
 
-            {/* Operations Card */}
-            <div className="order-3 col-start-2 lg:col-start-3 border rounded-xl p-4 sm:p-6 min-h-[230px] h-full">
 
-              {/* Mobile card category */}
-              <div className="flex items-center gap-2 mb-4 lg:hidden">
-                <span aria-hidden="true">▣</span>
-                <p className="font-semibold">
-                  Operations Experience
-                </p>
-              </div>
+{/* Operations Card */}
+<div className="order-3 col-start-2 lg:col-start-3 border rounded-xl p-4 sm:p-6 min-h-[230px] h-full lg:flex lg:flex-col lg:min-w-0">
 
-              <h4 className="text-xl font-bold mb-4">
-                Client Relations Specialist
-              </h4>
+  {/* Mobile card category */}
+  <div className="flex items-center gap-2 mb-4 lg:hidden">
+    <span aria-hidden="true">▣</span>
+    <p className="font-semibold">
+      Operations Experience
+    </p>
+  </div>
 
-              {/* Experience highlights */}
-              <ul className="space-y-1">
+  <h4 className="text-xl font-bold mb-8">
+    Client Relations Specialist
+  </h4>
 
-                <li className="border-l-[4px] border-black pl-2">
-                  Managed customer communication and service-related
-                  documentation
-                </li>
+  {/* Experience highlights */}
+  <ul className="space-y-1">
 
-                <li className="border-l-[4px] border-black pl-2">
-                  Coordinated internal follow-up and issue resolution
-                </li>
+    <li className="border-l-[4px] border-black pl-2">
+      Managed customer communication and service-related
+      documentation
+    </li>
 
-                <li className="border-l-[4px] border-black pl-2">
-                  Identified workflow problems that could be improved through
-                  software
-                </li>
+    <li className="border-l-[4px] border-black pl-2">
+      Coordinated internal follow-up and issue resolution
+    </li>
 
-              </ul>
+    <li className="border-l-[4px] border-black pl-2">
+      Identified workflow problems that could be improved through
+      software
+    </li>
 
-            </div>
+  </ul>
+
+  {/* Operations achievements - Desktop only */}
+  <div className="hidden lg:grid grid-cols-3 gap-0 mt-auto pt-6 min-w-0">
+
+    <div className="min-w-0 text-center border-r border-black px-2">
+      <p className="text-2xl font-bold">30+</p>
+      <p className="text-xs">New Clients / Day</p>
+    </div>
+
+    <div className="min-w-0 text-center border-r border-black px-2">
+      <p className="text-2xl font-bold">100+</p>
+      <p className="text-xs">Loan Applications / Month</p>
+    </div>
+
+    <div className="min-w-0 text-center px-2">
+      <p className="text-2xl font-bold">50+</p>
+      <p className="text-xs">Technicians Coordinated</p>
+    </div>
+
+  </div>
+
+</div>
+
 
           </div>
 
@@ -417,6 +472,6 @@ function Experience() {
 
     </section>
   )
-} 
+}
 
 export default Experience
