@@ -440,8 +440,7 @@ function Experience() {
               </ul>
 
               {/* Operations achievements - Desktop only */}
-              <div className="hidden lg:grid grid-cols-3 gap-0 mt-auto pt-6 min-w-0">
-
+              <div className="grid grid-cols-3 gap-0 mt-auto pt-6 min-w-0">
                 <div className="min-w-0 text-center border-r border-black px-2">
                   <p className="text-2xl font-bold">30+</p>
                   <p className="text-xs">New Clients / Day</p>
