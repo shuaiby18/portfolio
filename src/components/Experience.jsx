@@ -260,7 +260,7 @@ function Experience() {
                 </p>
               </div>
 
-              <h4 className="text-xl font-bold mb-8">
+              <h4 className="text-xl font-bold mb-4 lg:mb-8">
                 Operations Facility Service Coordinator
               </h4>
 
@@ -287,12 +287,10 @@ function Experience() {
 
 
               {/* Operations achievements - Desktop only */}
-              <div className="hidden lg:grid grid-cols-[max-content_1fr_1fr] gap-0 mt-auto pt-6">
-
+              <div className="grid grid-cols-3 lg:grid-cols-[max-content_1fr_1fr] gap-0 mt-auto pt-6">
                 <div className="text-center border-r border-black px-2">
                   <p className="text-2xl font-bold">120+</p>
-                  <p className="text-xs whitespace-nowrap">Concurrent Work Orders</p>
-                </div>
+                  <p className="text-xs lg:whitespace-nowrap">Concurrent Work Orders</p>                </div>
 
                 <div className="text-center border-r border-black px-2">
                   <p className="text-2xl font-bold">50+</p>
@@ -407,61 +405,61 @@ function Experience() {
             </div>
 
 
-{/* Operations Card */}
-<div className="order-3 col-start-2 lg:col-start-3 border rounded-xl p-4 sm:p-6 min-h-[230px] h-full lg:flex lg:flex-col lg:min-w-0">
+            {/* Operations Card */}
+            <div className="order-3 col-start-2 lg:col-start-3 border rounded-xl p-4 sm:p-6 min-h-[230px] h-full lg:flex lg:flex-col lg:min-w-0">
 
-  {/* Mobile card category */}
-  <div className="flex items-center gap-2 mb-4 lg:hidden">
-    <span aria-hidden="true">▣</span>
-    <p className="font-semibold">
-      Operations Experience
-    </p>
-  </div>
+              {/* Mobile card category */}
+              <div className="flex items-center gap-2 mb-4 lg:hidden">
+                <span aria-hidden="true">▣</span>
+                <p className="font-semibold">
+                  Operations Experience
+                </p>
+              </div>
 
-  <h4 className="text-xl font-bold mb-8">
-    Client Relations Specialist
-  </h4>
+              <h4 className="text-xl font-bold mb-4 lg:mb-8">
+                Client Relations Specialist
+              </h4>
 
-  {/* Experience highlights */}
-  <ul className="space-y-1">
+              {/* Experience highlights */}
+              <ul className="space-y-1">
 
-    <li className="border-l-[4px] border-black pl-2">
-      Managed customer communication and service-related
-      documentation
-    </li>
+                <li className="border-l-[4px] border-black pl-2">
+                  Managed customer communication and service-related
+                  documentation
+                </li>
 
-    <li className="border-l-[4px] border-black pl-2">
-      Coordinated internal follow-up and issue resolution
-    </li>
+                <li className="border-l-[4px] border-black pl-2">
+                  Coordinated internal follow-up and issue resolution
+                </li>
 
-    <li className="border-l-[4px] border-black pl-2">
-      Identified workflow problems that could be improved through
-      software
-    </li>
+                <li className="border-l-[4px] border-black pl-2">
+                  Identified workflow problems that could be improved through
+                  software
+                </li>
 
-  </ul>
+              </ul>
 
-  {/* Operations achievements - Desktop only */}
-  <div className="hidden lg:grid grid-cols-3 gap-0 mt-auto pt-6 min-w-0">
+              {/* Operations achievements - Desktop only */}
+              <div className="hidden lg:grid grid-cols-3 gap-0 mt-auto pt-6 min-w-0">
 
-    <div className="min-w-0 text-center border-r border-black px-2">
-      <p className="text-2xl font-bold">30+</p>
-      <p className="text-xs">New Clients / Day</p>
-    </div>
+                <div className="min-w-0 text-center border-r border-black px-2">
+                  <p className="text-2xl font-bold">30+</p>
+                  <p className="text-xs">New Clients / Day</p>
+                </div>
 
-    <div className="min-w-0 text-center border-r border-black px-2">
-      <p className="text-2xl font-bold">100+</p>
-      <p className="text-xs">Loan Applications / Month</p>
-    </div>
+                <div className="min-w-0 text-center border-r border-black px-2">
+                  <p className="text-2xl font-bold">100+</p>
+                  <p className="text-xs">Loan Applications / Month</p>
+                </div>
 
-    <div className="min-w-0 text-center px-2">
-      <p className="text-2xl font-bold">50+</p>
-      <p className="text-xs">Technicians Coordinated</p>
-    </div>
+                <div className="min-w-0 text-center px-2">
+                  <p className="text-2xl font-bold">50+</p>
+                  <p className="text-xs">Technicians Coordinated</p>
+                </div>
 
-  </div>
+              </div>
 
-</div>
+            </div>
 
 
           </div>
