@@ -7,12 +7,12 @@ function Experience() {
       <div className="max-w-7xl mx-auto px-6 md:px-10 lg:px-16">
 
         {/* Section heading */}
-        <h2 className="text-5xl lg:text-8xl font-bold text-center mb-4 lg:mb-16">
+        <h2 className="text-5xl lg:text-8xl font-bold text-center mb-3 lg:mb-16">
           EXPERIENCE
         </h2>
 
         {/* Mobile subtitle */}
-        <p className="text-center text-sm sm:text-base mb-12 lg:hidden">
+        <p className="text-center text-[15px] mb-10 lg:hidden">
           A journey through software & operations
         </p>
 
@@ -35,7 +35,7 @@ function Experience() {
         <div className="relative flex flex-col gap-10 lg:gap-12">
 
           {/* Main timeline line */}
-          <div className="absolute left-[10px] lg:left-1/2 -translate-x-1/2 top-2 bottom-0 w-[2px] bg-black"></div>
+          <div className="absolute left-[10px] lg:left-1/2 -translate-x-1/2 top-2 bottom-0 w-[5px] bg-black"></div>
 
           {/* ================= CARE2GIVE ROW ================= */}
           <div className="relative grid grid-cols-[20px_minmax(0,1fr)] lg:grid-cols-[1fr_0.45fr_1fr] gap-x-4 gap-y-4 lg:gap-10 items-start lg:items-stretch">
@@ -417,6 +417,6 @@ function Experience() {
 
     </section>
   )
-}
+} 
 
 export default Experience
