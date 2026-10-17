@@ -34,17 +34,19 @@ function Projects() {
       <div className="max-w-7xl mx-auto px-6 md:px-10 lg:px-16">
 
 
-        {/* Section heading */}
-        <h2 className="text-[clamp(3rem,1rem_+_7.5vw,6rem)] md:text-[min(clamp(3rem,1rem_+_7.5vw,6rem),7.5vw)] leading-none font-bold text-center mb-10 lg:mb-16">
-          <span className="inline-block text-left md:text-center md:whitespace-nowrap">
-            <span className="block md:inline">
-              SELECTED
-            </span>
-            <span className="block pl-8 md:inline md:pl-0 md:ml-3 lg:ml-4">
-              PROJECTS
-            </span>
-          </span>
-        </h2>
+
+{/* Section heading */}
+<h2 className="text-[clamp(3rem,1rem_+_7.5vw,6rem)] leading-none font-bold text-center mb-10 lg:mb-16 md:-mx-10 lg:-mx-16">
+  <span className="inline-block text-left md:text-center md:whitespace-nowrap md:tracking-tighter xl:tracking-normal">
+    <span className="block md:inline">
+      SELECTED
+    </span>
+    <span className="block pl-8 md:inline md:pl-0 md:ml-3 lg:ml-4">
+      PROJECTS
+    </span>
+  </span>
+</h2>
+
 
 
         {/* Project list */}
