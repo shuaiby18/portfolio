@@ -21,7 +21,7 @@ function About() {
           <div className="contents md:block lg:block">
 
             {/* Heading */}
-            <h2 className="order-1 col-span-12 md:order-none md:col-span-1 lg:order-none lg:col-span-1 text-5xl md:text-7xl lg:text-8xl font-bold text-center md:text-left lg:text-left mb-0 md:mb-4 lg:mb-0">
+            <h2 className="order-1 col-span-12 md:order-none md:col-span-1 lg:order-none lg:col-span-1 text-[clamp(3rem,1rem_+_7.5vw,6rem)] leading-none font-bold text-center md:text-left lg:text-left mb-0 md:mb-4 lg:mb-0">
               ABOUT ME
             </h2>
 
@@ -36,8 +36,10 @@ function About() {
               </p>
             </div>
 
+
             {/* Tech stack */}
-<div className="order-4 col-span-10 min-w-0 md:order-none md:col-span-1 grid grid-cols-8 gap-y-4 min-[600px]:grid-cols-5 min-[600px]:gap-x-2 min-[600px]:[&>div]:col-span-1 min-[600px]:[&>div]:col-start-auto min-[600px]:[&>div]:row-start-auto min-[600px]:[&>div]:w-full min-[600px]:[&>div]:max-w-[90px] md:gap-x-3 md:gap-y-3 lg:gap-x-8 lg:gap-y-4 lg:[&>div]:max-w-none">              {/* Mobile: Row 1 / Tablet + Desktop: Row 1 */}
+            <div className="order-4 col-span-10 min-w-0 md:order-none md:col-span-1 grid grid-cols-8 gap-y-4 md:grid-cols-5 md:gap-x-3 md:gap-y-3 md:[&>div]:col-span-1 md:[&>div]:col-start-auto md:[&>div]:row-start-auto md:[&>div]:w-full md:[&>div]:max-w-[90px] lg:gap-x-8 lg:gap-y-4 lg:[&>div]:max-w-none">
+
 
               <div className="col-span-2 col-start-2 row-start-1 md:col-span-1 md:col-start-auto md:row-start-auto lg:col-span-1 lg:col-start-auto lg:row-start-auto border rounded-full aspect-square w-[90%] md:w-full lg:w-full justify-self-center flex items-center justify-center text-xs sm:text-base">
                 Tech 1
@@ -89,14 +91,16 @@ function About() {
 
           </div>
 
+
           {/* Right side - Stack */}
-          <div className="order-5 col-span-2 md:order-none md:col-span-1 lg:order-none lg:col-span-1 flex flex-col items-center justify-between md:justify-start lg:justify-start md:self-center lg:self-start text-5xl md:text-7xl lg:text-8xl font-bold">
+          <div className="order-5 col-span-2 md:order-none md:col-span-1 lg:order-none lg:col-span-1 flex flex-col items-center justify-between md:justify-start lg:justify-start md:self-center lg:self-start text-[clamp(3rem,1rem_+_7.5vw,6rem)] leading-none font-bold">
             <span>S</span>
             <span>T</span>
             <span>A</span>
             <span>C</span>
             <span>K</span>
           </div>
+
 
         </div>
 

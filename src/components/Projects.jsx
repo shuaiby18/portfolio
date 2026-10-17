@@ -33,17 +33,19 @@ function Projects() {
       {/* Standard centered container */}
       <div className="max-w-7xl mx-auto px-6 md:px-10 lg:px-16">
 
+
         {/* Section heading */}
-        <h2 className="text-5xl min-[700px]:text-6xl md:text-6xl min-[900px]:text-7xl lg:text-8xl font-bold text-center mb-10 lg:mb-16">
-          <span className="inline-block text-left min-[600px]:text-center min-[600px]:whitespace-nowrap lg:whitespace-normal">
-            <span className="block min-[600px]:inline">
+        <h2 className="text-[clamp(3rem,1rem_+_7.5vw,6rem)] md:text-[min(clamp(3rem,1rem_+_7.5vw,6rem),7.5vw)] leading-none font-bold text-center mb-10 lg:mb-16">
+          <span className="inline-block text-left md:text-center md:whitespace-nowrap">
+            <span className="block md:inline">
               SELECTED
             </span>
-            <span className="block pl-8 min-[600px]:inline min-[600px]:pl-0 min-[600px]:ml-3 lg:ml-4">
+            <span className="block pl-8 md:inline md:pl-0 md:ml-3 lg:ml-4">
               PROJECTS
             </span>
           </span>
         </h2>
+
 
         {/* Project list */}
         <div className="flex flex-col gap-8 md:gap-16 lg:gap-24">
@@ -56,9 +58,8 @@ function Projects() {
 
               {/* Project visual */}
               <div
-                className={`order-2 ${
-                  index % 2 === 1 ? "md:order-2" : "md:order-1"
-                } rounded-xl md:border min-h-[210px] md:min-h-0 md:h-[250px] lg:h-[300px] flex flex-col items-center justify-center`}
+                className={`order-2 ${index % 2 === 1 ? "md:order-2" : "md:order-1"
+                  } rounded-xl md:border min-h-[210px] md:min-h-0 md:h-[250px] lg:h-[300px] flex flex-col items-center justify-center`}
               >
 
                 {/* Media placeholder */}
@@ -85,9 +86,8 @@ function Projects() {
 
               {/* Project information */}
               <div
-                className={`contents md:block ${
-                  index % 2 === 1 ? "md:order-1" : "md:order-2"
-                }`}
+                className={`contents md:block ${index % 2 === 1 ? "md:order-1" : "md:order-2"
+                  }`}
               >
 
                 {/* Title and description */}

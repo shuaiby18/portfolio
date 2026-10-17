@@ -7,19 +7,20 @@ function Experience() {
       <div className="max-w-7xl mx-auto px-6 md:px-10 lg:px-16">
 
         {/* Section heading */}
-        <h2 className="text-5xl lg:text-8xl font-bold text-center mb-3 lg:mb-3">          EXPERIENCE
+        <h2 className="text-[clamp(3rem,1rem_+_7.5vw,6rem)] leading-none font-bold text-center mb-3 lg:mb-3">
+          EXPERIENCE
         </h2>
 
-        {/* Mobile subtitle */}
-        <p className="text-center text-[15px] mb-10 lg:mb-8 lg:text-[24px]">
+
+        {/* Subtitle */}
+        <p className="text-center text-[clamp(0.9375rem,0.125rem_+_2.15vw,1.5rem)] mb-10 lg:mb-8">
           A journey through software & operations
         </p>
 
-        {/* Desktop column headings */}
-        <div className="hidden lg:grid grid-cols-[1fr_0.45fr_1fr] gap-10 lg:-mb-2">
+        {/* Desktop / Tablet column headings */}
+        <div className="hidden min-[800px]:grid grid-cols-[minmax(0,1fr)_minmax(0,0.45fr)_minmax(0,1fr)] gap-4 lg:gap-10 min-[800px]:mb-4 lg:-mb-2">
 
-
-          <h3 className="text-4xl font-bold flex items-center justify-center gap-3">
+          <h3 className="text-[clamp(22px,2.6vw,36px)] font-bold flex items-center justify-center gap-2 lg:gap-3 whitespace-nowrap">
             <span className="font-mono font-bold">
               {"</>"}
             </span>
@@ -28,30 +29,27 @@ function Experience() {
 
           <div></div>
 
-          <h3 className="text-4xl font-bold flex items-center justify-center gap-3">
+          <h3 className="text-[clamp(22px,2.6vw,36px)] font-bold flex items-center justify-center gap-2 lg:gap-3 whitespace-nowrap">
             <span aria-hidden="true">▣</span>
             Operations Experience
           </h3>
-
 
         </div>
 
         {/* Experience rows */}
         <div className="relative flex flex-col gap-10 lg:gap-12">
 
-
           {/* Main timeline line */}
-          <div className="absolute left-[10px] lg:left-1/2 -translate-x-1/2 top-2 lg:top-13 bottom-2 w-[5px] bg-black"></div>
-
+          <div className="absolute left-[10px] min-[800px]:left-1/2 -translate-x-1/2 top-2 min-[800px]:top-13 bottom-2 w-[5px] bg-black"></div>
 
           {/* ================= CARE2GIVE ROW ================= */}
-          <div className="relative grid grid-cols-[20px_minmax(0,1fr)] lg:grid-cols-[1fr_0.45fr_1fr] gap-x-4 gap-y-4 lg:gap-10 items-start lg:items-stretch">
+          <div className="relative grid grid-cols-[20px_minmax(0,1fr)] min-[800px]:grid-cols-[minmax(0,1fr)_minmax(0,0.45fr)_minmax(0,1fr)] gap-x-4 gap-y-4 lg:gap-10 items-start min-[800px]:items-stretch">
 
             {/* Software Card */}
-            <div className="order-2 col-start-2 lg:order-1 lg:col-start-1 border rounded-xl p-4 sm:p-6 min-h-[230px] h-full">
+            <div className="order-2 col-start-2 min-[800px]:order-1 min-[800px]:col-start-1 border rounded-xl p-4 sm:p-6 min-h-[230px] h-full min-[800px]:min-w-0">
 
               {/* Mobile card category */}
-              <div className="flex items-center gap-2 mb-4 lg:hidden">
+              <div className="flex items-center gap-2 mb-4 min-[800px]:hidden">
                 <span className="font-mono font-bold">
                   {"</>"}
                 </span>
@@ -86,33 +84,34 @@ function Experience() {
               </ul>
 
               {/* Technology circles */}
-              <div className="ml-2 lg:ml-0 flex gap-1 sm:gap-3 lg:gap-4">
-                <div className="w-10 h-10 sm:w-12 sm:h-12 lg:w-14 lg:h-14 shrink-0 border rounded-full flex items-center justify-center">
-                  <span className="text-[9px] sm:text-[10px] lg:text-xs leading-tight text-center break-normal">
+              <div className="ml-2 min-[800px]:ml-0 flex gap-1 sm:gap-3 min-[800px]:grid min-[800px]:grid-cols-5 min-[800px]:gap-[clamp(4px,1vw,16px)] min-[800px]:max-w-[344px]">
+
+                <div className="w-10 h-10 sm:w-12 sm:h-12 min-[800px]:w-full min-[800px]:h-auto min-[800px]:max-w-[56px] min-[800px]:aspect-square min-[800px]:min-w-0 shrink-0 border rounded-full flex items-center justify-center">
+                  <span className="text-[9px] sm:text-[10px] min-[800px]:text-[clamp(7px,0.94vw,12px)] lg:text-[clamp(9px,0.94vw,12px)] leading-tight text-center break-normal min-[800px]:break-words">
                     React
                   </span>
                 </div>
 
-                <div className="w-10 h-10 sm:w-12 sm:h-12 lg:w-14 lg:h-14 shrink-0 border rounded-full flex items-center justify-center">
-                  <span className="text-[9px] sm:text-[10px] lg:text-xs leading-tight text-center break-normal">
+                <div className="w-10 h-10 sm:w-12 sm:h-12 min-[800px]:w-full min-[800px]:h-auto min-[800px]:max-w-[56px] min-[800px]:aspect-square min-[800px]:min-w-0 shrink-0 border rounded-full flex items-center justify-center">
+                  <span className="text-[9px] sm:text-[10px] min-[800px]:text-[clamp(7px,0.94vw,12px)] lg:text-[clamp(9px,0.94vw,12px)] leading-tight text-center break-normal min-[800px]:break-words">
                     JavaScript
                   </span>
                 </div>
 
-                <div className="w-10 h-10 sm:w-12 sm:h-12 lg:w-14 lg:h-14 shrink-0 border rounded-full flex items-center justify-center">
-                  <span className="text-[9px] sm:text-[10px] lg:text-xs leading-tight text-center break-normal">
+                <div className="w-10 h-10 sm:w-12 sm:h-12 min-[800px]:w-full min-[800px]:h-auto min-[800px]:max-w-[56px] min-[800px]:aspect-square min-[800px]:min-w-0 shrink-0 border rounded-full flex items-center justify-center">
+                  <span className="text-[9px] sm:text-[10px] min-[800px]:text-[clamp(7px,0.94vw,12px)] lg:text-[clamp(9px,0.94vw,12px)] leading-tight text-center break-normal min-[800px]:break-words">
                     Node.js
                   </span>
                 </div>
 
-                <div className="w-10 h-10 sm:w-12 sm:h-12 lg:w-14 lg:h-14 shrink-0 border rounded-full flex items-center justify-center">
-                  <span className="text-[9px] sm:text-[10px] lg:text-xs leading-tight text-center break-normal">
+                <div className="w-10 h-10 sm:w-12 sm:h-12 min-[800px]:w-full min-[800px]:h-auto min-[800px]:max-w-[56px] min-[800px]:aspect-square min-[800px]:min-w-0 shrink-0 border rounded-full flex items-center justify-center">
+                  <span className="text-[9px] sm:text-[10px] min-[800px]:text-[clamp(7px,0.94vw,12px)] lg:text-[clamp(9px,0.94vw,12px)] leading-tight text-center break-normal min-[800px]:break-words">
                     Firebase
                   </span>
                 </div>
 
-                <div className="w-10 h-10 sm:w-12 sm:h-12 lg:w-14 lg:h-14 shrink-0 border rounded-full flex items-center justify-center">
-                  <span className="text-[9px] sm:text-[10px] lg:text-xs leading-tight text-center break-normal">
+                <div className="w-10 h-10 sm:w-12 sm:h-12 min-[800px]:w-full min-[800px]:h-auto min-[800px]:max-w-[56px] min-[800px]:aspect-square min-[800px]:min-w-0 shrink-0 border rounded-full flex items-center justify-center">
+                  <span className="text-[9px] sm:text-[10px] min-[800px]:text-[clamp(7px,0.94vw,12px)] lg:text-[clamp(9px,0.94vw,12px)] leading-tight text-center break-normal min-[800px]:break-words">
                     CSS
                   </span>
                 </div>
@@ -122,15 +121,15 @@ function Experience() {
             </div>
 
             {/* Timeline */}
-            <div className="relative z-10 order-1 col-span-2 grid grid-cols-[20px_minmax(0,1fr)] gap-x-4 items-start lg:order-2 lg:col-span-1 lg:col-start-2 lg:flex lg:flex-col lg:items-center lg:self-center lg:bg-white">
+            <div className="relative z-10 order-1 col-span-2 grid grid-cols-[20px_minmax(0,1fr)] gap-x-4 items-start min-[800px]:order-2 min-[800px]:col-span-1 min-[800px]:col-start-2 min-[800px]:flex min-[800px]:flex-col min-[800px]:items-center min-[800px]:self-center min-[800px]:bg-white min-[800px]:min-w-0">
 
               {/* Timeline dot */}
-              <div className="w-5 h-5 mt-1.5 lg:mt-0 lg:w-6 lg:h-6 rounded-full bg-black lg:mb-3"></div>
+              <div className="w-5 h-5 mt-1.5 min-[800px]:mt-0 min-[800px]:w-6 min-[800px]:h-6 rounded-full bg-black min-[800px]:mb-3"></div>
 
               {/* Company and date */}
-              <div className="flex flex-col items-start gap-1 lg:items-center">
+              <div className="flex flex-col items-start gap-1 min-[800px]:items-center">
 
-                <p className="font-bold text-lg lg:text-center">
+                <p className="font-bold text-lg min-[800px]:text-center">
                   Care2Give Charity Foundation
                 </p>
 
@@ -143,18 +142,18 @@ function Experience() {
             </div>
 
             {/* Empty Operations Space - Desktop */}
-            <div className="hidden lg:block lg:col-start-3"></div>
+            <div className="hidden min-[800px]:block min-[800px]:col-start-3"></div>
 
           </div>
 
           {/* ================= ROCKET ROW ================= */}
-          <div className="relative grid grid-cols-[20px_minmax(0,1fr)] lg:grid-cols-[1fr_0.45fr_1fr] gap-x-4 gap-y-4 lg:gap-10 items-start lg:items-stretch">
+          <div className="relative grid grid-cols-[20px_minmax(0,1fr)] min-[800px]:grid-cols-[minmax(0,1fr)_minmax(0,0.45fr)_minmax(0,1fr)] gap-x-4 gap-y-4 lg:gap-10 items-start min-[800px]:items-stretch">
 
             {/* Software Card */}
-            <div className="order-2 col-start-2 lg:order-1 lg:col-start-1 border rounded-xl p-4 sm:p-6 min-h-[230px] h-full">
+            <div className="order-2 col-start-2 min-[800px]:order-1 min-[800px]:col-start-1 border rounded-xl p-4 sm:p-6 min-h-[230px] h-full min-[800px]:min-w-0">
 
               {/* Mobile card category */}
-              <div className="flex items-center gap-2 mb-4 lg:hidden">
+              <div className="flex items-center gap-2 mb-4 min-[800px]:hidden">
                 <span className="font-mono font-bold">
                   {"</>"}
                 </span>
@@ -191,34 +190,34 @@ function Experience() {
               </ul>
 
               {/* Technology circles */}
-              <div className="ml-2 lg:ml-0 flex gap-1 sm:gap-3 lg:gap-4">
+              <div className="ml-2 min-[800px]:ml-0 flex gap-1 sm:gap-3 min-[800px]:grid min-[800px]:grid-cols-5 min-[800px]:gap-[clamp(4px,1vw,16px)] min-[800px]:max-w-[344px]">
 
-                <div className="w-10 h-10 sm:w-12 sm:h-12 lg:w-14 lg:h-14 shrink-0 border rounded-full flex items-center justify-center">
-                  <span className="text-[9px] sm:text-[10px] lg:text-xs leading-tight text-center break-normal">
+                <div className="w-10 h-10 sm:w-12 sm:h-12 min-[800px]:w-full min-[800px]:h-auto min-[800px]:max-w-[56px] min-[800px]:aspect-square min-[800px]:min-w-0 shrink-0 border rounded-full flex items-center justify-center">
+                  <span className="text-[9px] sm:text-[10px] min-[800px]:text-[clamp(7px,0.94vw,12px)] lg:text-[clamp(9px,0.94vw,12px)] leading-tight text-center break-normal min-[800px]:break-words">
                     React
                   </span>
                 </div>
 
-                <div className="w-10 h-10 sm:w-12 sm:h-12 lg:w-14 lg:h-14 shrink-0 border rounded-full flex items-center justify-center">
-                  <span className="text-[9px] sm:text-[10px] lg:text-xs leading-tight text-center break-normal">
+                <div className="w-10 h-10 sm:w-12 sm:h-12 min-[800px]:w-full min-[800px]:h-auto min-[800px]:max-w-[56px] min-[800px]:aspect-square min-[800px]:min-w-0 shrink-0 border rounded-full flex items-center justify-center">
+                  <span className="text-[9px] sm:text-[10px] min-[800px]:text-[clamp(7px,0.94vw,12px)] lg:text-[clamp(9px,0.94vw,12px)] leading-tight text-center break-normal min-[800px]:break-words">
                     Firebase
                   </span>
                 </div>
 
-                <div className="w-10 h-10 sm:w-12 sm:h-12 lg:w-14 lg:h-14 shrink-0 border rounded-full flex items-center justify-center">
-                  <span className="text-[9px] sm:text-[10px] lg:text-xs leading-tight text-center break-normal">
+                <div className="w-10 h-10 sm:w-12 sm:h-12 min-[800px]:w-full min-[800px]:h-auto min-[800px]:max-w-[56px] min-[800px]:aspect-square min-[800px]:min-w-0 shrink-0 border rounded-full flex items-center justify-center">
+                  <span className="text-[9px] sm:text-[10px] min-[800px]:text-[clamp(7px,0.94vw,12px)] lg:text-[clamp(9px,0.94vw,12px)] leading-tight text-center break-normal min-[800px]:break-words">
                     Node.js
                   </span>
                 </div>
 
-                <div className="w-10 h-10 sm:w-12 sm:h-12 lg:w-14 lg:h-14 shrink-0 border rounded-full flex items-center justify-center">
-                  <span className="text-[9px] sm:text-[10px] lg:text-xs leading-tight text-center break-normal">
+                <div className="w-10 h-10 sm:w-12 sm:h-12 min-[800px]:w-full min-[800px]:h-auto min-[800px]:max-w-[56px] min-[800px]:aspect-square min-[800px]:min-w-0 shrink-0 border rounded-full flex items-center justify-center">
+                  <span className="text-[9px] sm:text-[10px] min-[800px]:text-[clamp(7px,0.94vw,12px)] lg:text-[clamp(9px,0.94vw,12px)] leading-tight text-center break-normal min-[800px]:break-words">
                     Express
                   </span>
                 </div>
 
-                <div className="w-10 h-10 sm:w-12 sm:h-12 lg:w-14 lg:h-14 shrink-0 border rounded-full flex items-center justify-center">
-                  <span className="text-[9px] sm:text-[10px] lg:text-xs leading-tight text-center break-normal">
+                <div className="w-10 h-10 sm:w-12 sm:h-12 min-[800px]:w-full min-[800px]:h-auto min-[800px]:max-w-[56px] min-[800px]:aspect-square min-[800px]:min-w-0 shrink-0 border rounded-full flex items-center justify-center">
+                  <span className="text-[9px] sm:text-[10px] min-[800px]:text-[clamp(7px,0.94vw,12px)] lg:text-[clamp(9px,0.94vw,12px)] leading-tight text-center break-normal min-[800px]:break-words">
                     Firestore
                   </span>
                 </div>
@@ -228,15 +227,15 @@ function Experience() {
             </div>
 
             {/* Timeline */}
-            <div className="relative z-10 order-1 col-span-2 grid grid-cols-[20px_minmax(0,1fr)] gap-x-4 items-start lg:order-2 lg:col-span-1 lg:col-start-2 lg:flex lg:flex-col lg:items-center lg:self-center lg:bg-white">
+            <div className="relative z-10 order-1 col-span-2 grid grid-cols-[20px_minmax(0,1fr)] gap-x-4 items-start min-[800px]:order-2 min-[800px]:col-span-1 min-[800px]:col-start-2 min-[800px]:flex min-[800px]:flex-col min-[800px]:items-center min-[800px]:self-center min-[800px]:bg-white min-[800px]:min-w-0">
 
               {/* Timeline dot */}
-              <div className="w-5 h-5 mt-1.5 lg:mt-0 lg:w-6 lg:h-6 rounded-full bg-black lg:mb-3"></div>
+              <div className="w-5 h-5 mt-1.5 min-[800px]:mt-0 min-[800px]:w-6 min-[800px]:h-6 rounded-full bg-black min-[800px]:mb-3"></div>
 
               {/* Company and date */}
-              <div className="flex flex-col items-start gap-1 lg:items-center">
+              <div className="flex flex-col items-start gap-1 min-[800px]:items-center">
 
-                <p className="font-bold text-lg lg:text-center">
+                <p className="font-bold text-lg min-[800px]:text-center">
                   Rocket Facility Services
                 </p>
 
@@ -248,12 +247,11 @@ function Experience() {
 
             </div>
 
-
             {/* Operations Card */}
-            <div className="order-3 col-start-2 lg:col-start-3 border rounded-xl p-4 sm:p-6 min-h-[230px] h-full lg:flex lg:flex-col">
+            <div className="order-3 col-start-2 min-[800px]:col-start-3 border rounded-xl p-4 sm:p-6 min-h-[230px] h-full min-[800px]:flex min-[800px]:flex-col min-[800px]:min-w-0">
 
               {/* Mobile card category */}
-              <div className="flex items-center gap-2 mb-4 lg:hidden">
+              <div className="flex items-center gap-2 mb-4 min-[800px]:hidden">
                 <span aria-hidden="true">▣</span>
                 <p className="font-semibold">
                   Operations Experience
@@ -284,41 +282,44 @@ function Experience() {
 
               </ul>
 
-
-
-              {/* Operations achievements - Desktop only */}
+              {/* Operations achievements */}
               <div className="grid grid-cols-3 lg:grid-cols-[max-content_1fr_1fr] gap-0 mt-auto pt-6">
+
                 <div className="text-center border-r border-black px-2">
                   <p className="text-2xl font-bold">120+</p>
-                  <p className="text-xs lg:whitespace-nowrap">Concurrent Work Orders</p>                </div>
+                  <p className="text-xs lg:whitespace-nowrap">
+                    Concurrent Work Orders
+                  </p>
+                </div>
 
                 <div className="text-center border-r border-black px-2">
                   <p className="text-2xl font-bold">50+</p>
-                  <p className="text-xs whitespace-nowrap">Trades</p>
+                  <p className="text-xs min-[800px]:whitespace-normal lg:whitespace-nowrap">
+                    Trades
+                  </p>
                 </div>
 
                 <div className="text-center px-2">
                   <p className="text-2xl font-bold">300+</p>
-                  <p className="text-xs whitespace-nowrap">PM Locations</p>
+                  <p className="text-xs min-[800px]:whitespace-normal lg:whitespace-nowrap">
+                    PM Locations
+                  </p>
                 </div>
 
               </div>
 
-
-
             </div>
-
 
           </div>
 
           {/* ================= PROVINCIAL ROW ================= */}
-          <div className="relative grid grid-cols-[20px_minmax(0,1fr)] lg:grid-cols-[1fr_0.45fr_1fr] gap-x-4 gap-y-4 lg:gap-10 items-start lg:items-stretch">
+          <div className="relative grid grid-cols-[20px_minmax(0,1fr)] min-[800px]:grid-cols-[minmax(0,1fr)_minmax(0,0.45fr)_minmax(0,1fr)] gap-x-4 gap-y-4 lg:gap-10 items-start min-[800px]:items-stretch">
 
             {/* Software Card */}
-            <div className="order-2 col-start-2 lg:order-1 lg:col-start-1 border rounded-xl p-4 sm:p-6 min-h-[230px] h-full">
+            <div className="order-2 col-start-2 min-[800px]:order-1 min-[800px]:col-start-1 border rounded-xl p-4 sm:p-6 min-h-[230px] h-full min-[800px]:min-w-0">
 
               {/* Mobile card category */}
-              <div className="flex items-center gap-2 mb-4 lg:hidden">
+              <div className="flex items-center gap-2 mb-4 min-[800px]:hidden">
                 <span className="font-mono font-bold">
                   {"</>"}
                 </span>
@@ -353,28 +354,28 @@ function Experience() {
               </ul>
 
               {/* Technology circles */}
-              <div className="ml-2 lg:ml-0 flex gap-1 sm:gap-3 lg:gap-4">
+              <div className="ml-2 min-[800px]:ml-0 flex gap-1 sm:gap-3 min-[800px]:grid min-[800px]:grid-cols-4 min-[800px]:gap-[clamp(4px,1vw,16px)] min-[800px]:max-w-[272px]">
 
-                <div className="w-10 h-10 sm:w-12 sm:h-12 lg:w-14 lg:h-14 shrink-0 border rounded-full flex items-center justify-center">
-                  <span className="text-[9px] sm:text-[10px] lg:text-xs leading-tight text-center break-normal">
+                <div className="w-10 h-10 sm:w-12 sm:h-12 min-[800px]:w-full min-[800px]:h-auto min-[800px]:max-w-[56px] min-[800px]:aspect-square min-[800px]:min-w-0 shrink-0 border rounded-full flex items-center justify-center">
+                  <span className="text-[9px] sm:text-[10px] min-[800px]:text-[clamp(7px,0.94vw,12px)] lg:text-[clamp(9px,0.94vw,12px)] leading-tight text-center break-normal min-[800px]:break-words">
                     JavaScript
                   </span>
                 </div>
 
-                <div className="w-10 h-10 sm:w-12 sm:h-12 lg:w-14 lg:h-14 shrink-0 border rounded-full flex items-center justify-center">
-                  <span className="text-[9px] sm:text-[10px] lg:text-xs leading-tight text-center break-normal">
+                <div className="w-10 h-10 sm:w-12 sm:h-12 min-[800px]:w-full min-[800px]:h-auto min-[800px]:max-w-[56px] min-[800px]:aspect-square min-[800px]:min-w-0 shrink-0 border rounded-full flex items-center justify-center">
+                  <span className="text-[9px] sm:text-[10px] min-[800px]:text-[clamp(7px,0.94vw,12px)] lg:text-[clamp(9px,0.94vw,12px)] leading-tight text-center break-normal min-[800px]:break-words">
                     HTML
                   </span>
                 </div>
 
-                <div className="w-10 h-10 sm:w-12 sm:h-12 lg:w-14 lg:h-14 shrink-0 border rounded-full flex items-center justify-center">
-                  <span className="text-[9px] sm:text-[10px] lg:text-xs leading-tight text-center break-normal">
+                <div className="w-10 h-10 sm:w-12 sm:h-12 min-[800px]:w-full min-[800px]:h-auto min-[800px]:max-w-[56px] min-[800px]:aspect-square min-[800px]:min-w-0 shrink-0 border rounded-full flex items-center justify-center">
+                  <span className="text-[9px] sm:text-[10px] min-[800px]:text-[clamp(7px,0.94vw,12px)] lg:text-[clamp(9px,0.94vw,12px)] leading-tight text-center break-normal min-[800px]:break-words">
                     CSS
                   </span>
                 </div>
 
-                <div className="w-10 h-10 sm:w-12 sm:h-12 lg:w-14 lg:h-14 shrink-0 border rounded-full flex items-center justify-center">
-                  <span className="text-[9px] sm:text-[10px] lg:text-xs leading-tight text-center break-normal">
+                <div className="w-10 h-10 sm:w-12 sm:h-12 min-[800px]:w-full min-[800px]:h-auto min-[800px]:max-w-[56px] min-[800px]:aspect-square min-[800px]:min-w-0 shrink-0 border rounded-full flex items-center justify-center">
+                  <span className="text-[9px] sm:text-[10px] min-[800px]:text-[clamp(7px,0.94vw,12px)] lg:text-[clamp(9px,0.94vw,12px)] leading-tight text-center break-normal min-[800px]:break-words">
                     Chrome API
                   </span>
                 </div>
@@ -384,15 +385,15 @@ function Experience() {
             </div>
 
             {/* Timeline */}
-            <div className="relative z-10 order-1 col-span-2 grid grid-cols-[20px_minmax(0,1fr)] gap-x-4 items-start lg:order-2 lg:col-span-1 lg:col-start-2 lg:flex lg:flex-col lg:items-center lg:self-center lg:bg-white">
+            <div className="relative z-10 order-1 col-span-2 grid grid-cols-[20px_minmax(0,1fr)] gap-x-4 items-start min-[800px]:order-2 min-[800px]:col-span-1 min-[800px]:col-start-2 min-[800px]:flex min-[800px]:flex-col min-[800px]:items-center min-[800px]:self-center min-[800px]:bg-white min-[800px]:min-w-0">
 
               {/* Timeline dot */}
-              <div className="w-5 h-5 mt-1.5 lg:mt-0 lg:w-6 lg:h-6 rounded-full bg-black lg:mb-3"></div>
+              <div className="w-5 h-5 mt-1.5 min-[800px]:mt-0 min-[800px]:w-6 min-[800px]:h-6 rounded-full bg-black min-[800px]:mb-3"></div>
 
               {/* Company and date */}
-              <div className="flex flex-col items-start gap-1 lg:items-center">
+              <div className="flex flex-col items-start gap-1 min-[800px]:items-center">
 
-                <p className="font-bold text-lg lg:text-center">
+                <p className="font-bold text-lg min-[800px]:text-center">
                   Provincial Smart Home Services
                 </p>
 
@@ -404,12 +405,11 @@ function Experience() {
 
             </div>
 
-
             {/* Operations Card */}
-            <div className="order-3 col-start-2 lg:col-start-3 border rounded-xl p-4 sm:p-6 min-h-[230px] h-full lg:flex lg:flex-col lg:min-w-0">
+            <div className="order-3 col-start-2 min-[800px]:col-start-3 border rounded-xl p-4 sm:p-6 min-h-[230px] h-full min-[800px]:flex min-[800px]:flex-col min-[800px]:min-w-0">
 
               {/* Mobile card category */}
-              <div className="flex items-center gap-2 mb-4 lg:hidden">
+              <div className="flex items-center gap-2 mb-4 min-[800px]:hidden">
                 <span aria-hidden="true">▣</span>
                 <p className="font-semibold">
                   Operations Experience
@@ -439,8 +439,9 @@ function Experience() {
 
               </ul>
 
-              {/* Operations achievements - Desktop only */}
+              {/* Operations achievements */}
               <div className="grid grid-cols-3 gap-0 mt-auto pt-6 min-w-0">
+
                 <div className="min-w-0 text-center border-r border-black px-2">
                   <p className="text-2xl font-bold">30+</p>
                   <p className="text-xs">New Clients / Day</p>
@@ -459,7 +460,6 @@ function Experience() {
               </div>
 
             </div>
-
 
           </div>
 
