@@ -21,9 +21,17 @@ function ResearchProjects() {
       {/* Standard centered container */}
       <div className="max-w-7xl mx-auto px-6 md:px-10 lg:px-16">
 
+
         {/* Section heading */}
-        <h2 className="text-[clamp(3rem,1rem_+_7.5vw,6rem)] leading-none font-bold text-center mb-8 lg:mb-10">
-          RESEARCH PROJECTS
+        <h2 className="text-[clamp(3rem,1rem_+_7.5vw,6rem)] leading-none font-bold text-center mb-8 lg:mb-10 md:-mx-10 lg:-mx-16">
+          <span className="inline-block text-left md:text-center md:whitespace-nowrap md:tracking-tighter xl:tracking-normal">
+            <span className="block md:inline">
+              RESEARCH
+            </span>
+            <span className="block pl-8 md:inline md:pl-0 md:ml-3 lg:ml-4">
+              PROJECTS
+            </span>
+          </span>
         </h2>
 
         {/* Research projects grid */}
@@ -32,13 +40,12 @@ function ResearchProjects() {
           {researchProjects.map((project) => (
             <div
               key={project.title}
-              className="min-w-0 h-full border rounded-xl p-5 sm:p-6 lg:p-7 min-h-[380px] lg:min-h-[450px] flex flex-col"
-            >
+className="min-w-0 h-full border rounded-xl p-5 sm:p-6 lg:p-7 min-h-[500px] lg:min-h-[450px] flex flex-col"            >
 
-{/* Research title */}
-<h3 className="text-xl md:text-2xl lg:text-[22px] leading-tight font-bold text-left lg:min-h-[56px]">
-  {project.title}
-</h3>
+              {/* Research title */}
+              <h3 className="text-xl md:text-2xl lg:text-[22px] leading-tight font-bold text-left lg:min-h-[56px]">
+                {project.title}
+              </h3>
 
               {/* Research animation / video carousel */}
               <div className="relative flex-1 min-h-[200px] lg:min-h-[220px] mt-4 mb-4 border rounded-lg bg-gray-50">
