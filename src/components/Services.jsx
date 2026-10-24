@@ -85,7 +85,7 @@ function Services() {
 
               <div
                 key={service.number}
-                className="min-w-0 border rounded-xl min-h-[470px] p-5 flex flex-col"
+                className="min-w-0 border rounded-xl min-h-[540px] p-5 flex flex-col"
               >
 
                 {/* Card header */}
@@ -135,8 +135,7 @@ function Services() {
                   </p>
 
                   {/* Service features */}
-                  <div className="flex flex-col gap-2">
-
+                  <div className="flex flex-col gap-2 min-h-[80px]">
                     {service.features.map((feature) => (
 
                       <div
