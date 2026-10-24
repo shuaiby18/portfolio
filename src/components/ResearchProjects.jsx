@@ -1,4 +1,6 @@
 
+import { useState, useRef, useLayoutEffect } from "react"
+
 const researchProjects = [
   {
     title: "Font-Fusion Chrome Extension for Digital Literacy",
@@ -9,18 +11,74 @@ const researchProjects = [
   {
     title: "Analysis of Mobile Gaming Controller Schemes",
     description:
-      "Investigating how different mobile control schemes and UI designs affect user performance, usability, and interaction efficiency.",
+      "Investigating how different mobile control schemes impact interaction efficiency.",
     tags: ["HCI", "UI/UX", "Mobile Gaming", "Usability Research"],
   },
 ]
 
 function ResearchProjects() {
+
+  const [stackButtons, setStackButtons] = useState(false)
+  const footerRefs = useRef([])
+
+  {/* Check whether either footer needs two lines */}
+  useLayoutEffect(() => {
+
+    const checkFooterWidths = () => {
+
+      const shouldStack = footerRefs.current.some((footer) => {
+        if (!footer) return false
+
+        const tags = footer.firstElementChild
+        const button = footer.lastElementChild
+
+        if (!tags || !button) return false
+
+        const tagElements = Array.from(tags.children)
+
+        const tagGap =
+          parseFloat(getComputedStyle(tags).columnGap) || 0
+
+        const footerGap =
+          parseFloat(getComputedStyle(footer).columnGap) || 0
+
+        const tagsWidth =
+          tagElements.reduce(
+            (total, tag) => total + tag.getBoundingClientRect().width,
+            0
+          ) +
+          Math.max(0, tagElements.length - 1) * tagGap
+
+        const requiredWidth =
+          tagsWidth +
+          footerGap +
+          button.getBoundingClientRect().width
+
+        return requiredWidth > footer.clientWidth
+      })
+
+      setStackButtons(shouldStack)
+    }
+
+    const observer = new ResizeObserver(checkFooterWidths)
+
+    footerRefs.current.forEach((footer) => {
+      if (footer) observer.observe(footer)
+    })
+
+    checkFooterWidths()
+
+    document.fonts.ready.then(checkFooterWidths)
+
+    return () => observer.disconnect()
+
+  }, [])
+
   return (
     <section id="research" className="py-12">
 
       {/* Standard centered container */}
       <div className="max-w-7xl mx-auto px-6 md:px-10 lg:px-16">
-
 
         {/* Section heading */}
         <h2 className="text-[clamp(3rem,1rem_+_7.5vw,6rem)] leading-none font-bold text-center mb-8 lg:mb-10 md:-mx-10 lg:-mx-16">
@@ -35,12 +93,13 @@ function ResearchProjects() {
         </h2>
 
         {/* Research projects grid */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 auto-rows-fr gap-6 lg:gap-8 items-stretch">
+        <div className="grid grid-cols-1 min-[800px]:grid-cols-2 auto-rows-fr gap-6 lg:gap-8 items-stretch">
 
-          {researchProjects.map((project) => (
+          {researchProjects.map((project, index) => (
             <div
               key={project.title}
-className="min-w-0 h-full border rounded-xl p-5 sm:p-6 lg:p-7 min-h-[500px] lg:min-h-[450px] flex flex-col"            >
+              className="min-w-0 h-full border rounded-xl p-5 sm:p-6 lg:p-7 min-h-[500px] lg:min-h-[450px] flex flex-col"
+            >
 
               {/* Research title */}
               <h3 className="text-xl md:text-2xl lg:text-[22px] leading-tight font-bold text-left lg:min-h-[56px]">
@@ -58,7 +117,7 @@ className="min-w-0 h-full border rounded-xl p-5 sm:p-6 lg:p-7 min-h-[500px] lg:m
                 </div>
 
                 {/* Research description - inside carousel */}
-                <p className="absolute z-10 inset-x-4 bottom-9 lg:bottom-10 text-sm md:text-base lg:text-lg">
+                <p className="absolute z-10 inset-x-4 bottom-9 lg:bottom-10 text-sm lg:text-base">
                   {project.description}
                 </p>
 
@@ -76,7 +135,16 @@ className="min-w-0 h-full border rounded-xl p-5 sm:p-6 lg:p-7 min-h-[500px] lg:m
               </div>
 
               {/* Research tags and View More */}
-              <div className="relative z-10 flex flex-wrap items-center justify-between gap-4">
+              <div
+                ref={(element) => {
+                  footerRefs.current[index] = element
+                }}
+                className={`relative z-10 flex ${
+                  stackButtons
+                    ? "flex-col items-start"
+                    : "flex-wrap items-center"
+                } justify-between gap-4`}
+              >
 
                 {/* Research tags */}
                 <div className="flex flex-wrap items-center gap-x-5 gap-y-2">
