@@ -51,7 +51,7 @@ function Process() {
               <div aria-hidden="true" className="w-full h-px bg-black mb-1" />
 
               <p className="text-[clamp(0.75rem,0.70rem_+_1vw,2rem)] font-semibold leading-tight">
-                THE PROCESS DECONSTRUCTION
+                THE PROCESS VISUALIZATIONS
               </p>
             </div>
 
@@ -129,7 +129,7 @@ function Process() {
               <div aria-hidden="true" className="w-36 h-px bg-black mb-3" />
 
               <p className="text-[clamp(0.75rem,0.70rem_+_1vw,2rem)] font-semibold leading-tight">
-                THE PROCESS DECONSTRUCTION
+                THE PROCESS VISUALIZATIONS
               </p>
             </div>
 
