@@ -123,30 +123,29 @@ function Process() {
             min-[800px]:@min-[956px]/process:gap-12
           "
         >
-          {/* Section introduction */}
-          <div className="order-2">
-            <div className="mb-4">
-              <div aria-hidden="true" className="w-36 h-px bg-black mb-3" />
+{/* Section introduction */}
+<div className="order-2 text-right">
+  <div className="min-w-0 w-fit max-w-full ml-auto mb-4">
+    <div aria-hidden="true" className="w-full h-px bg-black mb-3" />
 
-              <p className="text-[clamp(0.75rem,0.70rem_+_1vw,2rem)] font-semibold leading-tight">
-                THE PROCESS VISUALIZATIONS
-              </p>
-            </div>
+    <p className="text-[clamp(0.75rem,0.70rem_+_1vw,2rem)] font-semibold leading-tight">
+      THE PROCESS VISUALIZATIONS
+    </p>
+  </div>
 
-            <h2
-              className="
-                text-left text-[clamp(3rem,1rem_+_7.5vw,6rem)]
-                leading-[1.1] font-bold tracking-tight
-              "
-            >
-              <span className="block">MY LAB</span>{" "}
-            </h2>
+  <h2
+    className="
+      text-[clamp(3rem,1rem_+_7.5vw,6rem)]
+      leading-[1.1] font-bold tracking-tight
+    "
+  >
+    <span className="block">MY LAB</span>{" "}
+  </h2>
 
-            <p className="mt-5 max-w-xs text-xl font-semibold leading-snug">
-              How I build, from the first conversation to launch.
-            </p>
-          </div>
-
+  <p className="mt-5 ml-auto max-w-xs text-xl font-semibold leading-snug">
+How I take a project from our first conversation to launch.
+  </p>
+</div>
           {/* Tablet and desktop process cards */}
           <div
             className="
