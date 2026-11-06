@@ -36,28 +36,28 @@ const processSteps = [
 function Process() {
   return (
     <section id="process" className="py-20">
-      <div className="max-w-7xl mx-auto px-6 md:px-10 lg:px-16">
+      <div className="max-w-7xl mx-auto px-6 md:px-10 lg:px-16 @container/process">
         {/* Mobile layout */}
         <div className="min-[800px]:hidden">
           {/* Mobile introduction */}
           <div
             className="
-              min-w-0 grid grid-cols-[auto_minmax(0,1fr)] items-center
+              min-w-0 grid grid-cols-[minmax(0,1fr)_auto] items-center
+              max-[360px]:grid-cols-[minmax(0,1fr)_minmax(0,1.2fr)]
               gap-x-2 min-[384px]:gap-x-4 gap-y-2 mb-8
             "
           >
-            <div className="w-fit text-left self-end min-[550px]:self-center">
+            <div className="min-w-0 w-fit max-w-full text-left self-end min-[550px]:self-center">
               <div aria-hidden="true" className="w-full h-px bg-black mb-1" />
 
               <p className="text-[clamp(0.75rem,0.70rem_+_1vw,2rem)] font-semibold leading-tight">
-                <span className="block">THE PROCESS</span>{" "}
-                <span className="block">VISUALIZATION</span>
+                THE PROCESS DECONSTRUCTION
               </p>
             </div>
 
             <h2
               className="
-                min-w-0 text-right
+                min-w-0 text-right min-[360px]:whitespace-nowrap
                 text-[clamp(3rem,1rem_+_7.5vw,6rem)]
                 leading-[1.1] font-bold tracking-tight
               "
@@ -66,7 +66,8 @@ function Process() {
             </h2>
 
             <p className="col-span-2 text-[clamp(13px,2.5vw,16px)] leading-snug">
-              How I build, from the first conversation to launch.            </p>
+              How I build, from the first conversation to launch.
+            </p>
           </div>
 
           {/* Mobile process cards */}
@@ -113,58 +114,59 @@ function Process() {
           </div>
         </div>
 
-        <div className="max-[800px]:hidden xl:grid xl:grid-cols-[minmax(0,2fr)_minmax(0,1fr)] xl:items-center xl:gap-12">
+        {/* Tablet and desktop layout */}
+        <div
+          className="
+            hidden min-[800px]:grid
+            grid-cols-[minmax(0,2fr)_minmax(0,1fr)]
+            items-center gap-6
+            min-[800px]:@min-[956px]/process:gap-12
+          "
+        >
           {/* Section introduction */}
-          <div className="mb-16 xl:order-2 xl:mb-0">
-            <div className="hidden xl:block xl:mb-4">
+          <div className="order-2">
+            <div className="mb-4">
               <div aria-hidden="true" className="w-36 h-px bg-black mb-3" />
 
               <p className="text-[clamp(0.75rem,0.70rem_+_1vw,2rem)] font-semibold leading-tight">
-                THE PROCESS VISUALIZATION
+                THE PROCESS DECONSTRUCTION
               </p>
             </div>
 
             <h2
               className="
-                text-8xl font-bold text-center
-                xl:text-left xl:text-[clamp(3rem,1rem_+_7.5vw,6rem)]
-                xl:leading-[1.1] xl:tracking-tight
+                text-left text-[clamp(3rem,1rem_+_7.5vw,6rem)]
+                leading-[1.1] font-bold tracking-tight
               "
             >
-              <span className="xl:block">MY</span>{" "}
-              <span className="xl:block">LAB</span>
+              <span className="block">MY LAB</span>{" "}
             </h2>
 
-            <p className="hidden xl:block xl:mt-5 xl:max-w-xs xl:text-xl xl:font-semibold xl:leading-snug">
+            <p className="mt-5 max-w-xs text-xl font-semibold leading-snug">
               How I build, from the first conversation to launch.
             </p>
           </div>
 
-          {/* Process cards */}
-          <div className="grid grid-cols-6 gap-4 xl:order-1 xl:grid-cols-3 xl:gap-5">
+          {/* Tablet and desktop process cards */}
+          <div
+            className="
+              order-1 grid grid-cols-3 gap-3
+              min-[800px]:@min-[956px]/process:gap-5
+            "
+          >
             {processSteps.map((step, index) => (
               <div
                 key={step.title}
-                className="
-                  relative border rounded-xl min-h-[400px] flex overflow-hidden
-                  xl:min-h-[260px] xl:rounded-2xl xl:border-black
-                "
+                className="relative min-h-[260px] flex overflow-hidden border border-black rounded-2xl"
               >
-                <div
-                  aria-hidden="true"
-                  className="absolute left-0 top-0 bottom-0 w-3 bg-black xl:hidden"
-                />
-
-                {/* Existing vertical label */}
-                <div className="w-full flex items-center justify-center xl:hidden">
-                  <h3 className="text-4xl font-bold [writing-mode:vertical-rl] rotate-180">
-                    {step.title}
-                  </h3>
-                </div>
-
-                {/* Desktop card */}
-                <div className="hidden xl:flex xl:min-w-0 xl:flex-1 xl:flex-col">
-                  <div className="relative isolate flex flex-1 flex-col justify-center bg-white px-5 py-6 text-black">
+                <div className="flex min-w-0 flex-1 flex-col">
+                  <div
+                    className="
+                      relative isolate flex flex-1 flex-col justify-center
+                      bg-white px-3 py-6 text-black
+                      min-[800px]:@min-[956px]/process:px-5
+                    "
+                  >
                     <span
                       aria-hidden="true"
                       className="
@@ -179,7 +181,12 @@ function Process() {
                     </span>
 
                     <div className="relative">
-                      <h3 className="text-2xl font-bold leading-tight">
+                      <h3
+                        className="
+                          text-lg font-bold leading-tight
+                          min-[800px]:@min-[956px]/process:text-2xl
+                        "
+                      >
                         {step.title}
                       </h3>
 
